@@ -26,7 +26,8 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  color: #fff; }
 
 .container {
   max-width: 140rem;
@@ -69,6 +70,13 @@ a:visited {
 
 .block {
   display: block; }
+
+.bigsize {
+  font-size: 2.5rem;
+  font-weight: 300; }
+
+.faded {
+  opacity: .5; }
 
 .heading1 {
   display: flex;
@@ -159,6 +167,46 @@ a:visited {
   height: 100%;
   background: url(../images/violet-bg.png) no-repeat center center;
   background-size: cover; }
+
+.section-green {
+  min-height: 100vh;
+  height: 100%;
+  background: url(../images/green-bg.png) no-repeat center center;
+  background-size: cover; }
+
+.section-blue {
+  min-height: 100vh;
+  height: 100%;
+  background: url(../images/blue-bg.png) no-repeat center center;
+  background-size: cover; }
+
+.footer {
+  background-color: #68a097;
+  padding: 4rem 0; }
+  .footer .footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer .footer-links .footer-link {
+      height: 6rem;
+      width: 6rem;
+      line-height: 6rem;
+      border-radius: 100%;
+      display: block;
+      text-align: center;
+      color: #fff;
+      font-size: 2rem;
+      margin: 0 2rem;
+      background-color: #75b4aa;
+      transition: all 0.4s ease; }
+    .footer .footer-links .footer-fb:hover {
+      background-color: #4f689e !important; }
+    .footer .footer-links .footer-twit:hover {
+      background-color: #74c7d5 !important; }
+    .footer .footer-links .footer-g:hover {
+      background-color: #df5c64 !important; }
+    .footer .footer-links .footer-ln:hover {
+      background-color: #3e61af !important; }
 
 .navigation {
   position: fixed;
@@ -345,7 +393,7 @@ a:visited {
     margin: 2rem 0;
     text-transform: uppercase;
     color: #a0849d;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 600;
     transition: all 0.4s ease; }
   .team .team-position {
@@ -386,3 +434,187 @@ a:visited {
       color: #fff; }
     .team .team-item:hover .team-position {
       color: #b64b52; }
+
+.portfolio .portfolio-navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 4rem 0;
+  border-top: 1px solid rgba(245, 193, 73, 0.2);
+  border-bottom: 1px solid rgba(245, 193, 73, 0.2);
+  margin: 4rem 0; }
+  .portfolio .portfolio-navigation .portfolio-name {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.6rem; }
+  .portfolio .portfolio-navigation .portfolio-menu {
+    display: flex;
+    align-items: center; }
+  .portfolio .portfolio-navigation .portfolio-link:link, .portfolio .portfolio-navigation .portfolio-link:visited {
+    display: block;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 .2rem;
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: all 0.4s ease; }
+  .portfolio .portfolio-navigation .portfolio-link:hover {
+    background-color: #f5c149; }
+
+.portfolio #portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .portfolio #portfolio .portfolio-item-link {
+    display: block;
+    margin: 1rem;
+    position: relative; }
+    .portfolio #portfolio .portfolio-item-link img {
+      height: 25rem;
+      width: 25rem;
+      object-fit: cover; }
+      @media only screen and (max-width: 600px) {
+        .portfolio #portfolio .portfolio-item-link img {
+          height: 20rem;
+          width: 20rem; } }
+      @media only screen and (max-width: 350px) {
+        .portfolio #portfolio .portfolio-item-link img {
+          height: 15rem;
+          width: 15rem; } }
+    .portfolio #portfolio .portfolio-item-link::after {
+      display: flex;
+      padding-bottom: 4rem;
+      content: '+';
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      color: #fff;
+      font-weight: 300;
+      font-size: 6rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url(../images/hover.png) no-repeat center center;
+      background-size: cover;
+      opacity: 0;
+      z-index: -1;
+      transition: all 0.4s ease; }
+    .portfolio #portfolio .portfolio-item-link:hover {
+      transition: all 0.4s ease; }
+      .portfolio #portfolio .portfolio-item-link:hover::after {
+        z-index: 50;
+        opacity: 1; }
+  .portfolio #portfolio .portfolio-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #000;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 100; }
+    .portfolio #portfolio .portfolio-title::before {
+      display: block;
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -1rem;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #fff;
+      z-index: 100; }
+
+.contacts {
+  padding-top: 10rem;
+  display: flex;
+  flex-wrap: wrap; }
+  .contacts .address {
+    width: 50%; }
+    @media only screen and (max-width: 900px) {
+      .contacts .address {
+        width: 100%; } }
+    .contacts .address .address-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    .contacts .address .faded {
+      margin: 2rem 0; }
+    .contacts .address .text {
+      width: 100%;
+      text-align: left; }
+    .contacts .address .phones {
+      margin-top: 4rem;
+      width: 20rem; }
+      .contacts .address .phones .phone-row {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.4rem; }
+      .contacts .address .phones .phone-name {
+        opacity: .5; }
+      .contacts .address .phones a:link, .contacts .address .phones a:visited, .contacts .address .phones a:hover {
+        color: #fff; }
+    .contacts .address .map {
+      width: 25rem;
+      height: 25rem;
+      background: url(../images/map.png) no-repeat center center;
+      background-size: cover;
+      margin: 1rem 3rem;
+      border-radius: 5px; }
+  .contacts .form {
+    width: 50%; }
+    @media only screen and (max-width: 900px) {
+      .contacts .form {
+        width: 100%; } }
+    .contacts .form .bigsize {
+      margin-bottom: 4rem; }
+    .contacts .form .form-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem; }
+    .contacts .form .form-input {
+      height: 4rem;
+      border-radius: 4px;
+      width: 48%;
+      display: block;
+      background-color: rgba(0, 0, 0, 0.15);
+      border: none;
+      padding: 1rem;
+      font-size: 1.4rem; }
+      .contacts .form .form-input::placeholder {
+        color: #74c7d5; }
+      .contacts .form .form-input:focus {
+        background-color: #fff;
+        color: #000; }
+        .contacts .form .form-input:focus::placeholder {
+          color: #fff; }
+    .contacts .form .form-textarea {
+      width: 100%;
+      height: 15rem;
+      resize: none;
+      font-family: "Lato", sans-serif; }
+    .contacts .form .btn {
+      display: block;
+      width: 30rem;
+      background-color: #c8535a;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 3rem;
+      text-align: center;
+      padding: 1rem 0;
+      margin: 2rem auto;
+      border: none;
+      border-bottom: 3px solid #b64b52;
+      border-radius: 3px;
+      cursor: pointer; }

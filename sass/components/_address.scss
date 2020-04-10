@@ -1,0 +1,107 @@
+.contacts{
+    padding-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    .address{
+        width: 50%;
+        @media only screen and (max-width: 900px) {
+            width: 100%;
+        }
+        .address-wrap{
+            display: flex;
+            // flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .faded{
+            margin: 2rem 0;
+        }
+        .text{
+            width: 100%;
+            text-align: left;
+        }
+
+        .phones{
+            margin-top: 4rem;
+            width: 20rem;
+            .phone-row{
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.4rem;
+            }
+            .phone-name{
+                opacity: .5;
+            }
+            a:link, a:visited, a:hover{
+                color: $white
+            }
+        }
+        .map{
+            width: 25rem;
+            height: 25rem;
+            background: url(../images/map.png) no-repeat center center;
+            background-size: cover;
+            margin: 1rem 3rem;
+            border-radius: 5px;
+        }
+    }
+    .form{
+        width: 50%;
+        @media only screen and (max-width: 900px) {
+            width: 100%;
+        }
+        .bigsize{
+            margin-bottom: 4rem;
+        }
+
+        .form-row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        .form-input{
+            height: 4rem;
+            border-radius: 4px;
+            width: 48%;
+            display: block;
+            background-color: rgba($black, .15);
+            border: none;
+            padding: 1rem;
+            font-size: 1.4rem;
+            &::placeholder {
+                color: $blue;
+            }
+
+            &:focus{
+                background-color: $white;
+                color: $black;
+                &::placeholder {
+                    color: $white;
+                }
+            }
+        }
+        .form-textarea{
+            width: 100%;
+            height: 15rem;
+            resize: none;
+            font-family: $default-font;
+           
+        }
+        .btn{
+            display: block;
+            width: 30rem;
+            background-color: #c8535a;;
+            color: $white;
+            text-transform: uppercase;
+            font-size: 3rem;
+            text-align: center;
+            padding: 1rem 0;
+            margin: 2rem auto;
+            border: none;
+            border-bottom: 3px solid $red;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    }
+}

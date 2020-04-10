@@ -30,3 +30,53 @@
   background: url(../images/violet-bg.png) no-repeat center center;
   background-size: cover;
 }
+
+.section-green{
+  min-height: 100vh;
+  height: 100%;
+  background: url(../images/green-bg.png) no-repeat center center;
+  background-size: cover;
+}
+
+.section-blue{
+  min-height: 100vh;
+  height: 100%;
+  background: url(../images/blue-bg.png) no-repeat center center;
+  background-size: cover;
+}
+
+.footer{
+  background-color: #68a097;
+  padding: 4rem 0;
+  .footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer-link{
+      height: 6rem;
+      width: 6rem;
+      line-height: 6rem;
+      border-radius: 100%;
+      display: block;
+      text-align: center;
+      color: $white;
+      font-size: 2rem;
+      margin: 0 2rem;
+      background-color: #75b4aa;
+      transition: $transition;
+    }
+    .footer-fb:hover{
+      background-color: $fb-color !important; 
+  }
+  .footer-twit:hover{
+      background-color: $twit-color !important;
+  }
+  .footer-g:hover{
+      background-color: $g-color !important;
+  }
+  .footer-ln:hover{
+      background-color: $ln-color !important;
+  }
+  }
+}
