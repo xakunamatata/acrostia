@@ -1,0 +1,30 @@
+.services{
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .services-item{
+        background-color: #c45158;
+        padding: 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 23%;
+        margin: .5rem;
+        @media only screen and (max-width: 900px) {
+            width: 48%;
+        }
+        @media only screen and (max-width: 415px) {
+            width: 100%;
+        }
+    }
+    .icon{
+        height: 15rem;
+    }
+    .text{
+        width: 100%;
+        line-height: 1.5rem;
+    }
+}

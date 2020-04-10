@@ -1,0 +1,32 @@
+.hero{
+    min-height: 100vh;
+    height: 100%;
+    background: url(../images/slider.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+      @media only screen and (max-width: 800px) {
+        min-height: 80vh;
+      }
+      @media only screen and (max-width: 600px) {
+        min-height: 70vh;
+      }
+      @media only screen and (max-width: 400px) {
+        min-height: 60vh;
+      }
+}
+
+.section-red{
+    min-height: 100vh;
+    height: 100%;
+    background: url(../images/red-bg.png) no-repeat center center;
+    background-size: cover;
+}
+.section-violet{
+  min-height: 100vh;
+  height: 100%;
+  background: url(../images/violet-bg.png) no-repeat center center;
+  background-size: cover;
+}

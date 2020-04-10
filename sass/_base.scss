@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  //This defines what 1rem is
+  font-size: 62.5%; //1rem = 10px
+  @media only screen and (max-width: 900px) {
+    font-size: 58%;
+  }
+  @media only screen and (max-width: 800px) {
+    font-size: 56%;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 55%;
+  }
+  @media only screen and (max-width: 400px) {
+    font-size: 50%;
+  }
+}
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: $default-font;
+  font-size: $default-font-size;
+}
+
+
+.container {
+  max-width: 140rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  width: 100%;
+}
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.section{
+  padding: 15rem 0 10rem;
+}
